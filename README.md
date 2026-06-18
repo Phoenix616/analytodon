@@ -177,7 +177,7 @@ echo "ENCRYPTION_KEY=$(openssl rand -hex 32)" >> .env
 echo "JWT_SECRET=$(openssl rand -base64 48)" >> .env
 
 # SESSION_SECRET — used by the frontend to encrypt session cookies
-echo "SESSION_SECRET=$(openssl rand -base64 64)" >> .env
+echo "SESSION_SECRET=$(openssl rand -base64 48)" >> .env
 ```
 
 > **Warning:** Never change `ENCRYPTION_KEY` after initial setup -- existing Mastodon tokens would become undecryptable.
