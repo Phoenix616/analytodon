@@ -167,7 +167,7 @@ Analytodon runs as three Docker containers -- a **backend** API (NestJS), a **fr
 
 ### 🔑 Generate Secrets
 
-Generate three secrets into the `.env` file before starting.
+Generate three secrets into the `.env` file before starting. The `ENCRYPTION_KEY` encrypts Mastodon OAuth tokens stored in the database -- it **must** be identical in the backend and CLI containers
 
 ```bash
 # ENCRYPTION_KEY — 64-character hex string (32 bytes for AES-256)
